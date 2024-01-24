@@ -3,15 +3,15 @@ const nounPlace = ['America', 'Thailand', 'Tesco', 'Costco', 'the butchers', 'th
 const nounPerson = ['dog', 'cat', 'husband', 'wife', 'boss', 'postman', 'dentist', 'doctor', 'masseuse', 'asian', 'dwarf', 'scotsman', 'surfer', 'olympian'];
 
 function removeItemOnce(array, value) {
-    var index = array.indexOf(value);
-    if (index > -1) {
-      array.splice(index, 1);
-    }
-    return value;
+  var index = array.indexOf(value);
+  if (index > -1) {
+    array.splice(index, 1);
   }
+  return value;
+}
 
-  const random = array =>
-    array[Math.floor(Math.random() * array.length)];
+const random = array =>
+  array[Math.floor(Math.random() * array.length)];
 
 //-------RUN PROGRAM-------//
 console.log(`You are ${removeItemOnce(adjectives, random(adjectives))} and ${removeItemOnce(adjectives, random(adjectives))}, you will travel to ${removeItemOnce(nounPlace, random(nounPlace))} in the future. This is where you will find a ${removeItemOnce(adjectives, random(adjectives))} ${random(nounPerson)} to explore ${removeItemOnce(nounPlace, random(nounPlace))} with.`);
