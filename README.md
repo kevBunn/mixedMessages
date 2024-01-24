@@ -11,6 +11,7 @@ The program contains 3 arrays:
 1. adjectives
 2. nounPlace
 3. nounPerson
+
 The sentence uses 3 x adjectives, 2 x nounPlace and 1 x nounPerson items from these 3 arrays. All of which are randomly selected and will only be used once in the sentence; no duplicates.
 
 ### How to use/ run this program:
